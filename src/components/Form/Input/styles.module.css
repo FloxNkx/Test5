@@ -1,0 +1,45 @@
+.inputGroup {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.label {
+    margin-bottom: 13px;
+    margin-left: 18px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #e1e0e5;
+}
+
+.input {
+    width: 100%;
+    max-height: 44px;
+    height: 44px;
+    padding: 0 18px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    border: none;
+    border-radius: 15px;
+    color: #18191e;
+    background: #f8f8f8;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.inputWrapper img {
+    margin-left: 11px;
+}
+
+@media (max-width: 480px) {
+    .label {
+        margin-left: 10px;
+        margin-bottom: 11px;
+        font-size: 16px;
+    }
+}

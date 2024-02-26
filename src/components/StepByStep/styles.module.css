@@ -1,0 +1,76 @@
+.stepItem {
+    width: 100%;
+}
+
+.stepHeader {
+    padding: 12px 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    background: #555969;
+    box-shadow: 1px 2px 8px 0px rgba(85, 89, 105, 0.10);
+    border-radius: 30px;
+}
+
+.stepHeader:hover {
+    cursor: pointer;
+}
+
+.stepHeader > div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.stepHeader .stepNum {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.stepHeader .name {
+    margin-left: 37px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.stepItem :global(.disabled) .stepNum,
+.stepItem :global(.disabled) .name {
+    color: #787B8A;
+}
+
+.openBtn {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.openBtn svg:global(.translate) {
+    transform: rotate(-90deg);
+}
+
+.stepContent {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media (max-width: 480px) {
+    .stepHeader {
+        padding: 14px 22px;
+    }
+    .stepContent {
+        font-size: 14px;
+    }
+    .stepHeader .stepNum {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .stepHeader .name {
+        font-size: 14px;
+    }
+}

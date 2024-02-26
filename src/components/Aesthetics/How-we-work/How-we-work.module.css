@@ -1,0 +1,114 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 40lh;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.body-title {
+    display: flex;
+    width: 60vw;
+    flex-direction: row;
+    text-align: start;
+    padding-left: 5%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.blocks-steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    width: 100vw;
+    height: 80%;
+}
+
+.block-steps-separate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    border-radius: 25px;
+    border-style: solid;
+    overflow: hidden;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.block-steps-separate:hover {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    border-radius: 25px;
+    border-style: solid;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: #5d48e7;
+    fill: #725df2;
+    filter: drop-shadow(1px 2px 8px rgba(85, 89, 105, 0.1));
+    backdrop-filter: blur(5.5px);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.title-blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 5%;
+    align-items: center;
+    font-size: 75px;
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.title-blocks-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 2%;
+
+    align-items: center;
+    font-size: 18px;
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description-blocks {
+    display: flex;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.book {
+    display: flex;
+    padding: 10px 65px;
+    margin-bottom: 12px;
+    align-self: center;
+    align-items: center;
+    border: none;
+    background-color: #ff861d;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 2%;
+    font-size: 18px;
+    margin-bottom: 2%;
+}

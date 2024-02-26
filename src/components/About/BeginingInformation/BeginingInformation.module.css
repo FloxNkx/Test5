@@ -1,0 +1,23 @@
+.begining-information-benefits-list {
+    background: #d9d8d8;
+    border-radius: 30px;
+    position: relative;
+    top: max(-18vw, -320px);
+    margin-bottom: max(-18vw, -320px);
+    padding: min(16vw, 16rem) min(2vw, 4rem) min(20vw, 5rem);
+}
+
+.begining-information-benefits-image {
+    height: 35vw;
+    width: 80vw;
+    max-width: 1200px;
+    max-height: 600px;
+    position: relative;
+    left: 60%;
+    top: max(-7vw, -100px);
+    z-index: 2;
+    transform: translateX(-50%);
+    background: url('/images/begining-benefit-image.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

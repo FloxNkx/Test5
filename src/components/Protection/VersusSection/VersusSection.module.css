@@ -1,0 +1,18 @@
+.versus-section-bg {
+    background: rgba(73, 77, 91, 0.4);
+    box-shadow: 1px 2px 8px rgba(85, 89, 105, 0.1);
+    backdrop-filter: blur(5.5px);
+    padding: 3rem 4rem 2rem;
+    border-radius: 30px;
+    background-image: url('https://carrectly.s3.amazonaws.com/public/protection/VS.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .versus-section-bg {
+        padding: 1.5rem 1rem;
+        background-image: url('/images/versus-mob-bg.svg');
+        background-size: contain;
+    }
+}

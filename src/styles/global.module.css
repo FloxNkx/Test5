@@ -1,0 +1,120 @@
+@value primary-color: #725DF2;
+@value secondary-color: #FF861D;
+@value white-color: #FFFFFF;
+@value dark-color: #18191E;
+
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white-color;
+    background: linear-gradient(180deg, #16161B 0.3%, #72758E 234.08%);
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.body footer {
+    background: dark-color;
+}
+
+.body a {
+    color: white-color;
+    text-decoration: none;
+}
+
+.body a:hover,
+.body button:hover {
+    cursor: pointer;
+}
+
+.body input[type="date"],
+.body input[type="time"] {
+    text-align: center;
+}
+
+.body ol {
+    list-style-type: decimal;
+}
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.section,
+.container {
+    max-width: 1360px;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.section h1 {
+    margin: 0;
+    font-size: 96px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.section h2 {
+    margin: 0;
+    font-size: 75px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.btn {
+    padding: 9px 45px;
+    border: none;
+    border-radius: 15px;
+    color: white-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.56px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn__primary {
+    background: primary-color;
+}
+
+.btn__secondary {
+    background: secondary-color;
+}
+
+.btn__secondary__disabled {
+    color: #555969;
+    background: #787B8A;
+}
+
+
+.btn__primary:disabled,
+.btn__secondary:disabled {
+    color: #555969;
+    background: #787B8A;
+}
+
+
+@media(max-width: 1440px) {
+    .main {
+        padding: 0 16px;
+    }
+}
+
+@media(max-width: 768px) {
+    .section h2 {
+        font-size: 48px;
+    }
+}
+
+@media(max-width: 480px) {
+    .section h2 {
+        font-size: 33px;
+    }
+}

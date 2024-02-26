@@ -1,0 +1,33 @@
+.quote-section-text::before {
+    content: '';
+    position: absolute;
+    left: max(-5vw, -75px);
+    top: -30px;
+    z-index: 0;
+    background-size: contain;
+    width: min(18vw, 96px);
+    height: min(15vw, 69px);
+    background: url('/images/quote.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.quote-section-text :global(p) {
+    position: relative;
+    z-index: 2;
+}
+
+.quote-section-author {
+    position: relative;
+}
+
+.quote-section-author::before {
+    content: '';
+    background: var(--white-color);
+    width: 27px;
+    height: 2px;
+    position: absolute;
+    margin-left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,19 @@
+#Deployemnt
+image: '***.dkr.ecr.us-east-1.amazonaws.com/your-ecr-repo-name:32'
+
+replicas: 1
+
+namespace: carrectlyweb
+
+containerPort: 3000
+
+limits:
+    cpu: '0.5'
+    memory: '512Mi'
+
+requests:
+    cpu: '0.1'
+    memory: '256Mi'
+    #Services
+    port: 3000
+    targetPort: 3000

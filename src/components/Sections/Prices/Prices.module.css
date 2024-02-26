@@ -1,0 +1,14 @@
+.carrctl-prices-box {
+    background: rgba(73, 77, 91, 0.4);
+    box-shadow: 1px 2px 8px rgba(85, 89, 105, 0.1);
+    backdrop-filter: blur(5.5px);
+    padding: 3rem 2rem;
+    border-radius: 30px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .carrctl-prices-box {
+        padding: 2.5rem 1rem;
+    }
+}

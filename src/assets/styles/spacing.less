@@ -1,0 +1,99 @@
+// MARGIN
+
+.make-margins(@breakpoint, @size: 100, @decrement: 2) when (@size >= 0) {
+    .make-margins(@breakpoint, @size - @decrement);
+
+    @size-px: ~'calc(@{size}rem * 0.1)';
+
+    .@{breakpoint}-mt-@{size} {
+        margin-top: @size-px;
+    }
+
+    .@{breakpoint}-mb-@{size} {
+        margin-bottom: @size-px;
+    }
+
+    .@{breakpoint}-my-@{size} {
+        margin-top: @size-px;
+        margin-bottom: @size-px;
+    }
+
+    .@{breakpoint}-mx-@{size} {
+        margin-left: @size-px;
+        margin-right: @size-px;
+    }
+
+    .@{breakpoint}-mr-@{size} {
+        margin-right: @size-px;
+    }
+
+    .@{breakpoint}-ml-@{size} {
+        margin-left: @size-px;
+    }
+}
+
+.make-margins(def);
+
+// PADDING
+
+.make-paddings(@breakpoint, @size: 100, @decrement: 2) when (@size >= 0) {
+    .make-paddings(@breakpoint, @size - @decrement);
+
+    @size-px: ~'calc(@{size}rem * 0.1)';
+
+    .@{breakpoint}-py-@{size} {
+        padding-top: @size-px;
+        padding-bottom: @size-px;
+    }
+    .@{breakpoint}-px-@{size} {
+        padding-left: @size-px;
+        padding-right: @size-px;
+    }
+}
+
+.make-paddings(def);
+
+.box-spacing {
+    padding-top: min(6vw, 6vh, 6rem);
+    padding-bottom: min(6vw, 6vh, 6rem);
+}
+
+.box-xl-spacing {
+    padding-top: min(16vw, 10vh, 10rem);
+    padding-bottom: min(16vw, 10vh, 10rem);
+}
+
+.box-xl-x-spacing {
+    padding-top: min(12vw, 12vh, 12em);
+    padding-bottom: min(24vw, 24vh, 24rem);
+}
+
+.box-xl-s-spacing {
+    padding-top: min(9vw, 9vh, 9em);
+    padding-bottom: min(12vw, 12vh, 12rem);
+}
+
+.box-xl-xxs-spacing {
+    padding-top: min(9vw, 9vh, 9em);
+    padding-bottom: min(4vw, 4vh, 4rem);
+}
+
+.box-sm-spacing {
+    padding-top: min(6vw, 6vh, 6rem);
+    padding-bottom: min(6vw, 6vh, 6rem);
+}
+
+.box-xs-spacing {
+    padding-top: min(4vw, 4vh, 4rem);
+    padding-bottom: min(2vw, 2vh, 2rem);
+}
+
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.def-mx-10-row {
+    margin-left: -1rem;
+    margin-right: -1rem;
+}

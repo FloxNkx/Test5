@@ -1,0 +1,117 @@
+.ant-layout.page-gradient-bg {
+    background: @bg-gradient;
+}
+
+.carrctl-not-found-main-content::before,
+.carrctl-not-found-main-content::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(/images/not-found/not-found-bg-image-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25vw;
+    height: 45vw;
+    z-index: 0;
+}
+
+.home-page-bg {
+    background-image: url('/images/main-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 30%;
+}
+
+.tesla-service-page-bg {
+    background-image: url('/images/tesla-service/tesla-page-bg.webp');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 100% 60%;
+}
+
+.detailing-page-bg {
+    background-image: url('/images/detailing/detailing-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carrctl-not-found-main-content::after {
+    background-image: url(/images/not-found/not-found-bg-image-2.png);
+    right: 0;
+    left: auto;
+}
+
+.oil-change-page-bg {
+    background-image: url('/images/oil-change/oil-change-bg.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 90% 40%;
+}
+
+.about-us-page-bg {
+    background-image: url('/images/about-us/about-us-page-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thank-you-page-bg {
+    background-image: url('/images/thank-you/thank-you-page-bg.webp');
+    background-repeat: no-repeat;
+    background-position: 100% 80%;
+}
+
+.mobile-service-page .main-inforamtion-section {
+    margin-top: max(-5vw, -5rem);
+}
+
+@media screen and (max-width: @screen-md) {
+    .oil-change-page .oil-change-page-bg {
+        padding-bottom: 10rem;
+        background-image: none;
+        position: relative;
+    }
+
+    .tesla-service-page-bg {
+        background-size: contain;
+        background-position: bottom right;
+        padding-bottom: 5rem;
+    }
+
+    .oil-change-page .oil-change-page-bg:after {
+        content: '';
+        background-image: url('/images/oil-change/oil-change-bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        right: -90px;
+        bottom: -70px;
+        z-index: 0;
+        display: block;
+    }
+
+    .thank-you-page-bg {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: @screen-mdX) {
+    .carrctl-not-found-main-content::before,
+    .carrctl-not-found-main-content::after {
+        top: 40%;
+    }
+
+    .home-page-bg {
+        background-position: center;
+    }
+
+    .carrctl-not-found-main-content .container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 100%;
+    }
+}

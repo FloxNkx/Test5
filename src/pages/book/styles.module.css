@@ -1,0 +1,111 @@
+.heroBlock > div {
+    margin-top: 50px;
+}
+
+.bookingFormWrapper {
+    position: relative;
+}
+
+.bookingFormWrapper .bgElement {
+    width: 100%;
+    height: 158px;
+    position: absolute;
+    top: 1000px;
+    right: -90%;
+    bottom: -5%;
+    border-left: 158px solid transparent;
+    border-bottom: 158px solid #585B67;
+    z-index: -15;
+}
+
+.advantagesList {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 50px;
+}
+
+.advantage {
+    max-width: 180px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.advantage span {
+    margin-top: 30px;
+    color: #787B8A;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.advantagesSlider .advantage {
+    max-width: 100%;
+    display: flex !important;
+}
+
+.advantagesSlider .advantage > div {
+    margin: 0 15px;
+    max-width: 180px;
+    display: flex !important;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/* Faq Accordion */
+.faqAccordion h2 {
+    max-width: 900px;
+}
+
+.faqAccordion > div {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.faqAccordion button {
+    margin-top: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .heroBlock h1 {
+        font-size: 60px;
+    }
+    .bookingFormWrapper .bgElement {
+        height: 100px;
+        top: 1000px;
+        border-left: 120px solid transparent;
+        border-bottom: 120px solid #585B67;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroBlock h1 {
+        font-size: 40px;
+    }
+    .heroBlock > div {
+        margin-top: 40px;
+    }
+    .otherServicesBlock {
+        padding: 0 16px;
+    }
+    .bookingFormWrapper {
+        padding: 10px 16px 50px 16px;
+    }
+    .bookingFormWrapper .bgElement {
+        height: 62px;
+        border-left: 62px solid transparent;
+        border-bottom: 62px solid #585B67;
+    }
+    .stepsFormWrapper {
+        margin: 0;
+    }
+    .advantage span {
+        margin-top: 20px;
+    }
+    .faqAccordion button {
+        margin-top: 20px;
+    }
+}

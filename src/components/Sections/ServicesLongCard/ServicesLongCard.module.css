@@ -1,0 +1,103 @@
+.service-item-box {
+    padding: min(6vw, 3rem) min(2vw, 1.4rem);
+    background-color: #725df2;
+    box-shadow: 1px 3px 8px rgba(85, 89, 105, 0.1);
+    border-radius: 20px;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.services-list .service-item-box:nth-child(1) .services-item-btn {
+    background-color: #7f6bf9;
+}
+
+.mobile-services {
+    background-color: red;
+}
+
+.services-list .service-item-box .services-item-title,
+.services-list .service-item-box .services-item-desc {
+    color: var(--white-color);
+}
+
+.services-list
+    :global(.slick-track)
+    :global(.slick-slide:nth-child(2n))
+    .service-item-box,
+.services-list .service-item-box:nth-child(2n) {
+    background-color: #fcfcfc;
+    border: 1px solid #787b8a;
+}
+
+.services-list
+    :global(.slick-track)
+    :global(.slick-slide:nth-child(2n))
+    .services-item-title,
+.services-list
+    :global(.slick-track)
+    :global(.slick-slide:nth-child(2n))
+    .services-item-desc,
+.services-list .service-item-box:nth-child(2n) .services-item-title,
+.services-list .service-item-box:nth-child(2n) .services-item-desc {
+    color: var(--black-color);
+}
+
+.services-list
+    :global(.slick-track)
+    :global(.slick-slide:nth-child(3n))
+    .service-item-box,
+.services-list .service-item-box:nth-child(3n) {
+    background-color: #787b8a;
+    box-shadow: 1px 3px 8px rgba(85, 89, 105, 0.1);
+}
+
+.services-list
+    :global(.slick-track)
+    :global(.slick-slide:nth-child(4n))
+    .service-item-box,
+.services-list .service-item-box:nth-child(4n) {
+    background-color: #72799a;
+    box-shadow: 1px 3px 8px rgba(85, 89, 105, 0.1);
+}
+
+.services-list
+    :global(.slick-track)
+    :global(.slick-slide:nth-child(5n))
+    .service-item-box,
+.services-list .service-item-box:nth-child(5n) {
+    background-color: #4e5160;
+    box-shadow: 1px 3px 8px rgba(85, 89, 105, 0.1);
+}
+
+.services-list
+    :global(.slick-track)
+    :global(.slick-slide:nth-child(6n))
+    .service-item-box,
+.services-list .service-item-box:nth-child(6n) {
+    background-color: #363844;
+    border: 1px solid #fff;
+    box-shadow: 1px 3px 8px rgba(85, 89, 105, 0.1);
+}
+
+.services-list .service-item-box:nth-child(4n) .services-item-title,
+.services-list .service-item-box:nth-child(4n) .services-item-desc,
+.services-list .service-item-box:nth-child(6n) .services-item-title,
+.services-list .service-item-box:nth-child(6n) .services-item-desc,
+.services-list
+    :global(.slick-track)
+    :global(.slick-slide:nth-child(4n))
+    .services-item-title,
+.services-list
+    :global(.slick-track)
+    :global(.slick-slide:nth-child(4n))
+    .services-item-desc,
+.services-list
+    :global(.slick-track)
+    :global(.slick-slide:nth-child(6n))
+    .services-item-title,
+.services-list
+    :global(.slick-track)
+    :global(.slick-slide:nth-child(6n))
+    .services-item-desc {
+    color: var(--white-color);
+}

@@ -1,0 +1,480 @@
+.bookingForm {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.stepsFormWrapper {
+    width: 100%;
+}
+
+.stepsFormWrapper > div:not(:first-child) {
+    margin-top: 20px;
+}
+
+.stepForm {
+    padding: 30px 0 50px 0;
+}
+
+.stepForm p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #E1E0E5;
+    white-space: nowrap;
+}
+
+.stepForm label {
+    margin-left: 0;
+}
+
+.confirmationLabel {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #E1E0E5;
+}
+
+
+.fieldsRow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 75px;
+}
+
+.fieldsColumn {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+.fieldGroupName {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.fieldGroupName :global(.tooltip_wrapper){
+    margin: 5px 0 0 25px;
+}
+
+.fieldGroup {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.inputGroup :global(.label) {
+    margin-left: 0;
+}
+
+.radioButtonsGroup {
+    max-width: 384px;
+    width: 100%;
+    margin-bottom: 13px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    gap: 18px;
+}
+
+.step1 .fieldGroupName:not(:first-child) {
+    margin-top: 20px;
+}
+
+.step1 .fieldGroup :global(textarea) {
+    margin-top: 30px;
+}
+
+.step1 .dropOffAddress {
+    margin-bottom: 36px;
+}
+
+.step1 .fieldsRow,
+.step2 .fieldsRow,
+.step3 .fieldsRow {
+    margin-top: 20px;
+}
+
+.step2 .estimatedTime {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step2 .estimatedTime > div {
+    max-width: 325px;
+}
+
+.step2 input {
+    max-width: 285px;
+}
+
+.step2 .estimatedTime input {
+    margin-right: 37px;
+}
+
+.step2 .fieldGroup:last-child {
+    margin-top: 20px;
+}
+
+.step3 .fieldsRow {
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.step3 .input {
+    width: auto;
+}
+
+.step1 .buttonGroup,
+.step2 .buttonGroup,
+.step3 .buttonGroup {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.summaryBlock {
+    max-width: 570px;
+    background: rgba(73, 77, 91, 0.40);
+    filter: drop-shadow(1px 2px 8px rgba(85, 89, 105, 0.10));
+    backdrop-filter: blur(5.5px);
+    border-radius: 30px;
+}
+
+.mobileSummaryBlock {
+    margin-top: -50px !important;
+    max-width: 570px;
+    background: rgba(73, 77, 91, 0.40);
+    border-radius: 30px;
+}
+
+.totalContainer {
+    padding: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 65px;
+    background: #555969;
+    box-shadow: 1px 2px 8px 0px rgba(85, 89, 105, 0.10);
+    border-radius: 30px;
+}
+
+.estPrice {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+.estPrice .label {
+    color: #E1E0E5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.estPrice .sum {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.summaryBody {
+    margin-top: 20px;
+    padding: 0 50px 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.summaryBody > div {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.promocodeContainer {
+    margin-top: 10px !important;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+
+.promocode {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.promocode span {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.promocode .inputGroup {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.promocode .input {
+    max-width: 227px;
+    margin-left: 8px;
+}
+
+.promocode .input input {
+    max-width: 227px;
+    padding: 12px 33px;
+    color: #18191E;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.infoText {
+    margin: 0;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.subHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subHeader h5 {
+    margin: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.subHeader hr {
+    margin: 0;
+    max-width: 269px;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: #555969;
+}
+
+.summaryBody > div ul,
+.summaryBody > div ol {
+    margin: 0;
+    padding: 0;
+}
+
+.summaryBody > div ul {
+    list-style-type: none;
+}
+
+.summaryBody > div ol {
+    padding-left: 16px;
+}
+
+.summaryBody > div ul li,
+.summaryBody > div ol li {
+    margin-top: 20px;
+    display: list-item;
+}
+
+.summaryBody > div ul li,
+.summaryBody > div ol li div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summaryBody > div li .thirdWidth {
+    width: 50%;
+}
+
+.summaryBody > div li .fullWidth {
+    width: 100%;
+}
+
+.summaryBody > div li .autoWidth {
+    width: auto;
+}
+
+.summaryBody > div li .buttonGroup {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.summaryBody > div li button {
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+.summaryBody > div li {
+    font-size: 20px;
+}
+
+.summaryBody > div li name {
+    color: #E1E0E5;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.summaryBody > div li value {
+    color: #E1E0E5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.summaryBody .additionally .infoText {
+    margin-top: 30px;
+}
+
+.summaryBody .privacyPolicyWrapper {
+    margin-top: 40px;
+}
+
+.summaryBody .privacyPolicyWrapper input {
+    margin: 0;
+}
+
+.summaryBody .privacyPolicyWrapper span {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.summaryBody > button {
+    margin-top: 50px;
+}
+
+.formErrorMessages {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+    color: #EA0000;
+    text-align: center;
+}
+
+.formError {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 960px) {
+    .bookingForm {
+        flex-flow: column-reverse nowrap;
+    }
+    .summaryBlock {
+        max-width: 100%;
+    }
+    .promocode .input,
+    .promocode .input input {
+        max-width: 100%;
+    }
+    .stepsFormWrapper {
+        margin-top: 90px;
+    }
+    .step2 .fieldsRow {
+        flex-flow: column nowrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+    .step3 .fieldsRow {
+        flex-flow: column nowrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .totalContainer {
+        padding: 20px;
+        justify-content: space-between;
+    }
+    .totalContainer .label {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .totalContainer .sum {
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .summaryBody {
+        padding: 0 14px 40px 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .totalContainer {
+        gap: 0;
+    }
+    .totalContainer .priceDetails li {
+        align-items: center;
+    }
+    .totalContainer .priceDetails .name {
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .totalContainer .priceDetails .value {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .promocode {
+        flex-flow: row wrap;
+    }
+    .promocode span {
+        width: 100%;
+    }
+    .promocode .input {
+        margin-left: 0;
+    }
+    .subHeader hr {
+        width: 60%;
+    }
+    .summaryBody h5 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .summaryBody > div li {
+        font-size: 14px;
+    }
+    .summaryBody li span {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .summaryBody img {
+        width: 20px;
+        height: 20px;
+    }
+    .summaryBody .additionally .infoText {
+        margin-top: 15px;
+    }
+    .summaryBody .privacyPolicyWrapper {
+        margin-top: 20px;
+    }
+    .summaryBody > button {
+        margin-top: 20px;
+    }
+    .stepForm p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .stepForm p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

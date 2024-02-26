@@ -1,0 +1,47 @@
+.MySlider {
+    margin-top: 50px;
+}
+
+.MySlider > div {
+    margin: 0 -15px;
+}
+
+.dots {
+    margin: 45px 0 0 0;
+    padding: 0;
+    display: flex !important;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.dots button {
+    margin: 0;
+    padding: 0;
+    width: 15px !important;
+    height: 15px !important;
+    font-size: 0;
+    outline: none;
+    border: none;
+    border-radius: 50%; /* Updated to fully round the corners, making a circle */
+    background: white;
+}
+
+.dots button:hover {
+    cursor: pointer;
+}
+
+.dots :global(li.slick-active) button {
+    background: #FF861D;
+}
+
+@media (max-width: 480px) {
+    .dots {
+        margin-top: 10px;
+    }
+    .dots button {
+        width: 15px !important;
+        height: 15px !important;
+    }
+}

@@ -1,0 +1,71 @@
+﻿@value primary-color: #725DF2;
+@value secondary-color: #FF861D;
+@value white-color: #FFFFFF;
+
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white-color;
+    background: #18191e none repeat;
+}
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.section {
+    max-width: 1300px;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.section h2 {
+    margin: 0;
+    font-size: 75px;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 9px 45px;
+    border: none;
+    border-radius: 15px;
+    color: white-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.56px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn__primary {
+    background: primary-color;
+}
+
+.btn__secondary {
+    background: secondary-color;
+}
+
+@media (max-width: 1440px) {
+    .main {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section h2 {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,75 @@
+.circle {
+    background: rgba(73, 77, 91, 0.4);
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(1px 2px 8px rgba(85, 89, 105, 0.1));
+    backdrop-filter: blur(5.5px);
+    border-radius: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.how-we-work-active-item .circle {
+    background: #725df2;
+}
+
+.how-we-work-item-list .feature-item-box:not(:last-child) .how-we-work:before {
+    content: '';
+    right: -90px;
+    position: absolute;
+    width: calc(100% - 140px);
+    height: 0.5px;
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    top: 50px;
+}
+
+.how-we-work-item-list .how-we-work-active-item .circle:after {
+    content: url('/images/cars/car.svg');
+    left: 50%;
+    position: absolute;
+    width: 134px;
+    height: 45px;
+    display: block;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.how-we-work-item-list .feature-item-box:nth-child(n + 3) .work-title,
+.how-we-work-item-list .feature-item-box:nth-child(n + 3) .work-desc {
+    color: #787b8a;
+}
+
+@media screen and (max-width: 768px) {
+    .how-we-work-item-list .feature-item-box .circle {
+        width: 60px;
+        height: 60px;
+        padding: 0 40px;
+    }
+
+    .how-we-work-item-list
+        .feature-item-box:not(:last-child)
+        .how-we-work:before {
+        left: 47px;
+        top: 50%;
+        position: absolute;
+        height: 100%;
+        width: 0.5px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .how-we-work-item-list .how-we-work-active-item .circle:after {
+        width: 76px;
+        height: 24px;
+        top: 50%;
+        content: url('/images/cars/car-mobile.svg');
+    }
+
+    .how-we-work-item-list .boxContent {
+        width: 60%;
+    }
+
+    .how-we-work-item-list .feature-item-box .how-we-work {
+        justify-content: space-between;
+        text-align: left;
+    }
+}

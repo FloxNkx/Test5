@@ -1,0 +1,121 @@
+.storage-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.storage-info-list .storage-info-col-item {
+    background-color: rgba(73, 77, 91, 0.7);
+    box-shadow: 1px 2px 8px rgba(85, 89, 105, 0.1);
+    border-radius: 30px;
+    padding: min(2vw, 2rem) min(1vw, 5rem);
+    margin-bottom: 30px;
+}
+
+.storage-info-list .storage-info-col-item:nth-child(1) .storage-info-desc {
+    text-transform: uppercase;
+}
+
+.storage-info-list .storage-info-col-item:nth-child(1) {
+    border-radius: 30px 0px 0px 30px;
+}
+
+.storage-info-list .storage-info-col-item:nth-child(3) {
+    border-radius: 0px 30px 30px 0px;
+}
+
+.storage-info-list .storage-info-col-item:nth-child(1) .storage-info-item {
+    padding: min(4vw, 3.5rem) min(1vw, 0.2rem);
+}
+
+.storage-info-list .storage-info-col-item:nth-child(3) .storage-info-desc {
+    padding: min(2vw, 1rem) min(2vw, 5rem);
+}
+
+.storage-info-list .storage-info-col-item:nth-child(2) .storage-info-item {
+    padding: min(3vw, 0.9rem) min(6vw, 4rem);
+}
+
+.storage-info-list .storage-info-col-item:nth-child(3) {
+    padding: 0;
+}
+
+.storage-info-list
+    .storage-info-col-item:nth-child(2)
+    .storage-info-item:nth-child(1) {
+    padding-bottom: min(4vw, 3rem) !important;
+}
+
+.storage-info-list
+    .storage-info-col-item:nth-child(3)
+    .storage-info-item:nth-child(1) {
+    background-color: #494d5bb2;
+    padding: min(2vw, 3rem) 0;
+    border-radius: 0px 30px 0px 0px;
+    margin: 0;
+}
+
+.storage-info-list .storage-info-col-item:nth-child(2) {
+    background-color: #725df2;
+    margin-bottom: 0px;
+}
+
+.storage-info-list .storage-info-col-item:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: max(-14vw, -200px);
+    right: 0;
+    width: min(20vw, 300px);
+    height: min(20vw, 150px);
+    background-image: url('/images/cars/car-storage-img.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .storage-info-list .storage-info-col-item .storage-info-desc {
+        font-size: 8px;
+    }
+
+    .storage-info-list .storage-info-col-item .storage-info-icon {
+        display: none;
+    }
+
+    .storage-info-list .storage-info-col-item:nth-child(2) {
+        margin-bottom: 5px;
+    }
+
+    .storage-info-list
+        .storage-info-col-item:nth-child(2)
+        .storage-info-item:nth-child(1)
+        .storage-info-desc,
+    .storage-info-list
+        .storage-info-col-item:nth-child(3)
+        .storage-info-item:nth-child(1)
+        .storage-info-desc {
+        font-size: 12px !important;
+    }
+
+    .storage-info-list
+        .storage-info-col-item:nth-child(2)
+        .storage-info-item:nth-child(1) {
+        margin: 1vw 0.4rem !important;
+        padding: 1vw 0.4rem !important;
+    }
+
+    .storage-info-list .storage-info-col-item:nth-child(2) .storage-info-item {
+        padding: 4vw 0.4rem;
+    }
+
+    .storage-info-list .storage-info-col-item:nth-child(3) .storage-info-item {
+        padding: 1vw 0.2rem;
+        margin: 1.4vw 0;
+    }
+
+    .storage-info-list .storage-info-col-item:nth-child(1)::before {
+        width: 20vw;
+        height: 50px;
+        top: -70px;
+    }
+}

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-carrectlyweb
+  namespace: {{ .Release.Name }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-carrectlyweb
+  replicas: {{ .Values.replicas }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-carrectlyweb
+    spec:
+      containers:
+      - name: {{ .Release.Name }}
+        image: {{ .Values.image }}
+        ports:
+          - containerPort: 3000
+        resources:
+          limits:
+            cpu: {{ .Values.limits.cpu }}
+            memory: {{ .Values.limits.memory }}
+          requests:
+            cpu: {{ .Values.requests.cpu }}
+            memory: {{ .Values.requests.memory }}

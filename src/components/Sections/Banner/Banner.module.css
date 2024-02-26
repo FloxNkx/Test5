@@ -1,0 +1,19 @@
+.page-banner {
+    padding: min(6vw, 20vh) 0 min(13vw, 30vh);
+}
+
+.rating-description {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-left: 20px;
+    color: var(--gray-color);
+    font-family: var(--medium-font-family);
+}
+
+@media screen and (max-width: 360px) {
+    .rating-description {
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,214 @@
+.body {
+    display: flex;
+    height: 100lvh;
+    width: auto;
+    flex-direction: column;
+    background-image: url('https://carrectly.s3.amazonaws.com/public/main/Volvo-main.png');
+    flex-shrink: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+
+.block-description {
+    display: flex;
+    margin-top: 7%;
+    margin-left: 6%;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 42vw;
+    height: auto;
+    z-index: 10;
+}
+
+.block-description-title {
+    display: flex;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.block-description-description {
+    display: flex;
+    margin-top: 8%;
+    width: 75%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button-block {
+    display: flex;
+    margin-top: 8%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-block-book-now {
+    display: flex;
+    justify-content: center;
+    padding: 0.2rem 0.6rem;
+    text-align: end;
+    align-items: center;
+    align-self: center;
+    font-style: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 12vw;
+    height: 5lvh;
+    color: wheat;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #ff6c00;
+}
+
+.button-block-about-us {
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    padding: 0.2rem 0.6rem;
+    text-align: end;
+    align-items: center;
+    align-self: center;
+    font-style: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 12vw;
+    height: 5lvh;
+    color: wheat;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #725df2;
+}
+
+.body-ranking {
+    display: flex;
+    margin-top: 4%;
+    margin-left: 0%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 42vw;
+    height: auto;
+    z-index: 10;
+}
+.body-ranking-stars {
+    display: flex;
+    margin-top: 8%;
+    width: 75%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.body-ranking-brands {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+    width: 45%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (max-width: 1075px) {
+    .body {
+        display: flex;
+        height: 40lh;
+        width: auto;
+        background: linear-gradient(180deg, #16161b 0.06%, #16161b 158.02%);
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .block-description {
+        width: 90%;
+        height: auto;
+    }
+    .block-description-title {
+        width: 50%;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .block-description-description {
+        width: 55%;
+        font-size: 12px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .button-block {
+        display: flex;
+        margin-top: 4%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-self: flex-start;
+        width: 39%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .button-block-about-us,
+    .button-block-book-now {
+        margin-top: 15%;
+        width: 35vw;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        flex-shrink: 0;
+        margin-left: 0%;
+    }
+
+    .body-ranking {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15%;
+        margin-top: 5%;
+        width: 70%;
+        height: 50%;
+    }
+
+    .body-ranking-stars {
+        display: flex;
+        margin-top: 10%;
+        justify-content: space-between;
+        width: 100%;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .body-ranking-brands {
+        display: flex;
+        margin-top: 10%;
+        width: 60%;
+        height: 60%;
+        justify-content: space-around;
+        margin-bottom: 0%;
+    }
+}

@@ -1,0 +1,66 @@
+.burger-menu-content.ant-drawer-content {
+    background-color: rgba(24, 25, 30, 0.9);
+    box-shadow: 1px 2px 8px rgba(85, 89, 105, 0.1);
+    backdrop-filter: blur(13.5px);
+}
+
+.burger-menu-content.ant-drawer-content .ant-drawer-header {
+    display: none;
+}
+
+.ant-drawer .ant-drawer-content-wrapper {
+    min-height: 575px;
+    height: 575px;
+    top: 135px;
+}
+
+.burger-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+}
+
+.ant-drawer .ant-drawer-content-wrapper .ant-drawer-body {
+    padding: 2vw 2vw;
+}
+
+.header-collapse .ant-collapse-header > .ant-collapse-header-text {
+    color: #555969;
+    font-family: @medium-font-family;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.cart-btn {
+    padding: 0 !important;
+}
+
+.header-collapse.ant-collapse > .ant-collapse-item {
+    border-bottom: 0px;
+}
+
+.header-collapse.ant-collapse-borderless
+    > .ant-collapse-item.ant-collapse-item-active
+    .ant-collapse-header-text {
+    color: @secondary-color;
+}
+
+.header-collapse.ant-collapse-borderless
+    > .ant-collapse-item.ant-collapse-item-active
+    svg
+    * {
+    fill: @secondary-color;
+}
+
+.header-collapse.ant-collapse .ant-collapse-expand-icon svg * {
+    fill: #555969;
+}
+
+.header-collapse.ant-collapse .ant-collapse-content-box {
+    padding-bottom: 2px;
+}

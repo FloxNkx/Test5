@@ -1,0 +1,38 @@
+.inputGroup {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.label {
+    margin-bottom: 13px;
+    margin-left: 18px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #e1e0e5;
+}
+
+.textarea {
+    width: auto;
+    min-height: 42px;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 15px;
+    color: #18191e;
+    background: #f8f8f8;
+}
+
+.textarea::placeholder {
+    font-style: italic;
+    color: #e1e0e5;
+}
+
+@media (max-width: 480px) {
+    .label {
+        margin-left: 10px;
+        margin-bottom: 11px;
+        font-size: 16px;
+    }
+}

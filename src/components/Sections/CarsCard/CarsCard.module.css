@@ -1,0 +1,132 @@
+.cars-card-item-box {
+    padding: min(6vw, 3rem) min(5vw, 2.4rem);
+    background-color: #725df2;
+    box-shadow: 1px 3px 8px rgba(85, 89, 105, 0.1);
+    border-radius: 20px;
+}
+
+.cars-card-list .cars-card-item-box .cars-card-item-title,
+.cars-card-list .cars-card-item-box .cars-card-item-desc {
+    color: var(--white-color);
+}
+
+.cars-card-list .cars-card-item-1 .cars-card-item-box {
+    background-color: #fcfcfc;
+    border: 1px solid #787b8a;
+}
+
+.cars-card-list :global(.slick-track) {
+    padding-bottom: 40px;
+}
+
+.cars-card-list .cars-card-item-box {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.cars-card-list .cars-card-second-style.cars-card-item-2 .cars-card-item-box,
+.cars-card-list .cars-card-item-3.cars-card-first-style .cars-card-item-box {
+    background-color: #787b8a;
+    box-shadow: 1px 3px 8px rgba(85, 89, 105, 0.1);
+}
+
+.cars-card-list .cars-card-item-1 .cars-card-item-box .cars-card-item-title,
+.cars-card-list .cars-card-item-1 .cars-card-item-box .cars-card-item-desc,
+.cars-card-list .cars-card-item-1 .cars-card-item-box .carrctl-link {
+    color: var(--black-color);
+}
+
+.cars-card-list .cars-card-item-2.cars-card-first-style .cars-card-item-box,
+.cars-card-list .cars-card-second-style.cars-card-item-3 .cars-card-item-box {
+    border: 2px solid #e1e0e5;
+    background-color: transparent;
+    box-shadow: 1px 3px 8px rgba(85, 89, 105, 0.1);
+}
+
+.cars-card-list .cars-card-second-style.cars-card-item-2 .cars-card-item-box,
+.cars-card-list .cars-card-second-style.cars-card-item-4 .cars-card-item-box,
+.cars-card-list .cars-card-item-3.cars-card-first-style .cars-card-item-box {
+    background-position: bottom center;
+}
+
+.cars-card-list
+    .cars-card-item-2.cars-card-first-style
+    .cars-card-item-box
+    .cars-card-item-title,
+.cars-card-list
+    .cars-card-item-2.cars-card-first-style
+    .cars-card-item-box
+    .carrctl-link,
+.cars-card-list
+    .cars-card-second-style.cars-card-item-3
+    .cars-card-item-box
+    .cars-card-item-title,
+.cars-card-list
+    .cars-card-second-style.cars-card-item-3
+    .cars-card-item-box
+    .carrctl-link,
+.cars-card-list
+    .cars-card-second-style.cars-card-item-5
+    .cars-card-item-box
+    .cars-card-item-title,
+.cars-card-list
+    .cars-card-second-style.cars-card-item-5
+    .cars-card-item-box
+    .carrctl-link {
+    color: #e1e0e5;
+}
+
+.cars-card-list
+    .cars-card-item-2.cars-card-first-style
+    .cars-card-item-box
+    .cars-card-item-desc,
+.cars-card-list
+    .cars-card-item-4.cars-card-first-style
+    .cars-card-item-box
+    .cars-card-item-desc,
+.cars-card-list
+    .cars-card-second-style.cars-card-item-3
+    .cars-card-item-box
+    .cars-card-item-desc,
+.cars-card-list
+    .cars-card-second-style.cars-card-item-5
+    .cars-card-item-box
+    .cars-card-item-desc {
+    color: #787b8a;
+}
+
+.cars-card-list
+    .cars-card-item-3.cars-card-first-style
+    .cars-card-item-box
+    .cars-card-item-desc {
+    color: #c0c2ce;
+}
+
+.cars-card-list .cars-card-second-style.cars-card-item-4 .cars-card-item-box {
+    background-color: #72799a;
+    box-shadow: 1px 3px 8px rgba(85, 89, 105, 0.1);
+}
+
+.cars-card-list .cars-card-second-style.cars-card-item-5 .cars-card-item-box,
+.cars-card-list .cars-card-item-4.cars-card-first-style .cars-card-item-box {
+    background-color: rgba(85, 89, 105, 0.76);
+    box-shadow: 1px 3px 8px rgba(85, 89, 105, 0.1);
+    backdrop-filter: blur(5.5px);
+}
+
+.cars-card-item-content {
+    position: relative;
+    z-index: 4;
+}
+
+@media screen and (max-width: 1070px) {
+    .cars-card-list .cars-card-item-box .cars-card-item-title {
+        font-size: 1.5em !important;
+    }
+
+    .cars-card-list .cars-card-item-box {
+        background-size: 60%;
+    }
+}

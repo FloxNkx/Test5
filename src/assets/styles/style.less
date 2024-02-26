@@ -1,0 +1,344 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 solid transparent;
+    font-family: @primary-font-family;
+}
+
+*:focus-visible {
+    outline: none;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+    height: 100%;
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: #f8f8f8;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #0507106e;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+body {
+    line-height: 1;
+    text-rendering: optimizeSpeed;
+    padding: 0;
+    width: 100% !important;
+    overflow-x: hidden;
+    background: @bg-gradient;
+    height: 100vh;
+}
+
+// reset anchor style
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button,
+[role='button'] {
+    cursor: pointer;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+    color: @secondary-color;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+.ant-input-affix-wrapper > input.ant-input:focus,
+.ant-input-affix-wrapper:focus-within {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1.25rem !important;
+    padding-left: 1.25rem !important;
+}
+
+@container: {
+    xs: @screen-xs;
+    sm: @screen-sm;
+    md: @screen-md;
+    lg: @screen-lg;
+    xl: @screen-xl;
+    xxl: @screen-xxl;
+};
+
+each(@container, {
+    .container-@{key} {
+        max-width: @value;
+    }
+
+});
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.flex-1 {
+    flex: 0 0 1;
+}
+
+.ant-layout-header {
+    background: transparent;
+    height: auto;
+    padding: 1.4rem 0;
+}
+
+.carrctl-primary-link {
+    color: @card-title-color;
+    font-family: @primary-font-family;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    transition: @default-transtion;
+}
+
+.carrctl-primary-link:hover {
+    color: @white-color !important;
+    text-decoration-line: underline;
+    transition: @default-transtion;
+}
+
+.review-card-divider {
+    border-bottom: 1px solid @card-title-color;
+    padding-bottom: 10px;
+}
+
+.blog-card-divider {
+    border-bottom: 1px solid @gray-color;
+    padding-bottom: 20px;
+}
+
+.social-icon-wrap {
+    width: 25px;
+    height: 25px;
+    padding: 0.3rem;
+    border: 1px solid @gray-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: @default-transtion;
+}
+
+.social-icon-wrap:hover {
+    filter: opacity(0.7);
+    transition: @default-transtion;
+}
+
+.ant-layout-footer {
+    background-color: @black-color;
+    padding: 4vw 0 2vw;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.carrctl-def-list li {
+    padding-left: 1em;
+    margin-left: 1em;
+    text-align: left;
+}
+
+.carrctl-def-list li::marker {
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTAuOTIyMDMxIDYuNTI4ODFMMTMuMTcyIDYuNTI4ODFMNy45MjIwMyAxLjI3ODgxTDguNTgyMDMgMC41Mjg4MDhMMTUuMDgyIDcuMDI4ODFMOC41ODIwMyAxMy41Mjg4TDcuOTIyMDMgMTIuNzc4OEwxMy4xNzIgNy41Mjg4MUwwLjkyMjAzMSA3LjUyODgxTDAuOTIyMDMxIDYuNTI4ODFaIiBmaWxsPSIjRkY4NjFEIi8+Cjwvc3ZnPgo=');
+}
+
+.w-full {
+    width: 100%;
+}
+
+.max-content {
+    max-width: max-content;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.w-1-2 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h-1-2 {
+    height: 75vh;
+}
+
+.mx-left {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+.def-carousel-md-navigation {
+    padding-bottom: 2rem;
+}
+
+.def-carousel-xs-navigation {
+    padding-bottom: 0;
+    margin-bottom: 1.4rem;
+}
+
+.carrctl-br-20 {
+    border-radius: 20px;
+}
+
+.carrctl-br-40 {
+    border-radius: 40px;
+}
+
+.align-stretch {
+    align-self: stretch;
+}
+
+.hide-carousel {
+    height: 0;
+    opacity: 0;
+}
+
+.ant-carousel .slick-list {
+    display: flex;
+}
+
+.ant-carousel .slick-slider .slick-track {
+    display: flex;
+    height: auto;
+    min-height: fit-content;
+}
+
+.ant-carousel .slick-list .slick-slide {
+    align-self: stretch;
+}
+
+.ant-carousel .slick-list .slick-slide > div,
+.ant-carousel .slick-list .slick-slide > div > div {
+    height: 100%;
+}
+
+textarea.ant-input {
+    padding: 1rem 1.4rem;
+}
+
+.ant-upload-wrapper .ant-upload {
+    background: @white-color;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.image-cover {
+    object-fit: cover;
+}
+
+.carrctl-z4 {
+    z-index: 4;
+}
+
+@import './variables.less';
+@import './spacing.less';
+@import './text.less';
+@import './button.less';
+@import './slider.less';
+@import './collapse.less';
+@import './header.less';
+@import './media.less';
+@import './pages.less';
+@import './dropdown.less';
+@import './fonts.less';
+@import './radio.less';
+@import './tabs.less';

@@ -1,0 +1,72 @@
+/* Hero Block */
+.heroBlock {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.heroBlock span {
+    max-width: 656px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.heroBlock button {
+    margin-top: 30px;
+    padding: 9px 58px;
+}
+
+.heroBlock > div {
+    margin-top: 50px;
+    display: flex;
+    gap: 26px;
+}
+
+.reviewsBlock {
+    padding: 75px 0 150px 0;
+}
+
+.advantagesBlock > div,
+.reviewsBlock > div {
+    position: relative;
+}
+.advantagesBlock .bgElement,
+.reviewsBlock .bgElement {
+    width: 100%;
+    height: 158px;
+    position: absolute;
+    right: -95%;
+    bottom: 0;
+    border-left: 158px solid transparent;
+    border-bottom: 158px solid #585B67;
+    z-index: -10;
+}
+
+.advantagesBlock .bgElement {
+    left: -107%;
+    bottom: 20%;
+    border-right: 158px solid transparent;
+    border-bottom: 158px solid #585B67;
+}
+
+@media (max-width: 768px) {
+    .heroBlock h1 {
+        font-size: 60px;
+    }
+    .advantagesBlock .bgElement {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroBlock h1 {
+        font-size: 40px;
+    }
+    .advantagesBlock {
+        padding: 10px 16px;
+    }
+    .reviewsBlock {
+        padding: 10px 16px 60px 16px;
+    }
+}
